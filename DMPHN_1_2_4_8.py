@@ -239,7 +239,7 @@ def main():
                 
         if (epoch)%100==0:
             if os.path.exists('./checkpoints/' + METHOD + '/epoch' + str(epoch)) == False:
-            	os.system('mkdir ' + METHOD + '/epoch' + str(epoch))
+            	os.system('mkdir ./checkpoints/' + METHOD + '/epoch' + str(epoch))
             
             print("Testing...")
             test_dataset = GoProDataset(
