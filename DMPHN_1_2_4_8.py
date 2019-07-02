@@ -145,6 +145,7 @@ def main():
                 ]))
 
         train_dataloader = DataLoader(train_dataset, batch_size = BATCH_SIZE, shuffle=True)
+        start = 0
         
         for iteration, images in enumerate(train_dataloader):            
             mse = nn.MSELoss().cuda(GPU)            
@@ -232,7 +233,9 @@ def main():
             decoder_lv4_optim.step()
             
             if (iteration+1)%10 == 0:
-                print("epoch:", epoch, "iteration:", iteration+1, "loss:",loss.data[0])
+                stop = time.time()
+                print("epoch:", epoch, "iteration:", iteration+1, "loss:%.4f"%loss.item()), 'time:%.4f'%(stop-start))
+                start = time.time()
                 
         if (epoch)%100==0:
             if os.path.exists('./checkpoints/' + METHOD + '/epoch' + str(epoch)) == False:
