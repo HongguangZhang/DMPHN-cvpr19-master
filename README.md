@@ -1,5 +1,7 @@
 # DMPHN-cvpr19-master
-Pytorch Implementation of CVPR19 "[Deep Stacked Multi-patch Hierarchical Network for Image Deblurring](https://arxiv.org/pdf/1904.03468.pdf)"
+Pytorch Implementation of CVPR19 "[Deep Stacked Multi-patch Hierarchical Network for Image Deblurring](https://arxiv.org/pdf/1904.03468.pdf)" <br/>
+
+Please download GoPro dataset into './datas'. <br/>
 
 __Requires.__
 ```
@@ -11,14 +13,14 @@ scipy
 __For model training, run following commands.__
 
 ```
-python xxx.py -b 6
+python xxx.py
 ```
 
 
 __For model testing, copy test samples into './test_samples', then run following commands.__
 
 ```
-python xxx_test.py -b 6
+python xxx_test.py
 ```
 ## Citation
 If you use this code in your research, please cite the following paper. Thank you!
