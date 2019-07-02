@@ -24,7 +24,7 @@ __For model testing, copy test samples into './test_samples', then run following
 python xxx_test.py
 ```
 ## Citation
-If you use this code in your research, please cite the following paper. Thank you!
+If you think this work is useful for your research, please cite the following paper.
 
 ```
 @InProceedings{Zhang_2019_CVPR,
