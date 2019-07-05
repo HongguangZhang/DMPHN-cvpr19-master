@@ -1,6 +1,8 @@
 # Deep Stacked Multi-patch Hierarchical Network for Image Deblurring
 Pytorch Implementation of CVPR19 "[Deep Stacked Multi-patch Hierarchical Network for Image Deblurring](https://arxiv.org/pdf/1904.03468.pdf)" <br/>
 
+![Pipeline of DMPHN](./docs/dmphn.png)
+
 Please download GoPro dataset into './datas'. <br/>
 https://drive.google.com/file/d/1H0PIXvJH4c40pk7ou6nAwoxuR4Qh_Sa2/view
 
