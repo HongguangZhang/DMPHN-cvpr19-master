@@ -105,7 +105,7 @@ def main():
         print("load decoder_lv3 success")
     
     if os.path.exists('./checkpoints/' + METHOD) == False:
-        os.system('mkdir ' + METHOD)    
+        os.system('mkdir ./checkpoints/' + METHOD)    
             
     for epoch in range(args.start_epoch, EPOCHS):
         encoder_lv1_scheduler.step(epoch)
