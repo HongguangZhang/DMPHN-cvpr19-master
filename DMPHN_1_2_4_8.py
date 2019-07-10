@@ -92,30 +92,30 @@ def main():
     decoder_lv4_optim = torch.optim.Adam(decoder_lv4.parameters(),lr=LEARNING_RATE)
     decoder_lv4_scheduler = StepLR(decoder_lv4_optim,step_size=1000,gamma=0.1)
 
-    if os.path.exists(str(METHOD + "/encoder_lv1.pkl")):
-        encoder_lv1.load_state_dict(torch.load(str(METHOD + "/encoder_lv1.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/encoder_lv1.pkl")):
+        encoder_lv1.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/encoder_lv1.pkl")))
         print("load encoder_lv1 success")
-    if os.path.exists(str(METHOD + "/encoder_lv2.pkl")):
-        encoder_lv2.load_state_dict(torch.load(str(METHOD + "/encoder_lv2.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/encoder_lv2.pkl")):
+        encoder_lv2.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/encoder_lv2.pkl")))
         print("load encoder_lv2 success")
-    if os.path.exists(str(METHOD + "/encoder_lv3.pkl")):
-        encoder_lv3.load_state_dict(torch.load(str(METHOD + "/encoder_lv3.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/encoder_lv3.pkl")):
+        encoder_lv3.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/encoder_lv3.pkl")))
         print("load encoder_lv3 success")
-    if os.path.exists(str(METHOD + "/encoder_lv4.pkl")):
-        encoder_lv4.load_state_dict(torch.load(str(METHOD + "/encoder_lv4.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/encoder_lv4.pkl")):
+        encoder_lv4.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/encoder_lv4.pkl")))
         print("load encoder_lv4 success")
 
-    if os.path.exists(str(METHOD + "/decoder_lv1.pkl")):
-        decoder_lv1.load_state_dict(torch.load(str(METHOD + "/decoder_lv1.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/decoder_lv1.pkl")):
+        decoder_lv1.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/decoder_lv1.pkl")))
         print("load encoder_lv1 success")
-    if os.path.exists(str(METHOD + "/decoder_lv2.pkl")):
-        decoder_lv2.load_state_dict(torch.load(str(METHOD + "/decoder_lv2.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/decoder_lv2.pkl")):
+        decoder_lv2.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/decoder_lv2.pkl")))
         print("load decoder_lv2 success")
-    if os.path.exists(str(METHOD + "/decoder_lv3.pkl")):
-        decoder_lv3.load_state_dict(torch.load(str(METHOD + "/decoder_lv3.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/decoder_lv3.pkl")):
+        decoder_lv3.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/decoder_lv3.pkl")))
         print("load decoder_lv3 success")
-    if os.path.exists(str(METHOD + "/decoder_lv4.pkl")):
-        decoder_lv4.load_state_dict(torch.load(str(METHOD + "/decoder_lv4.pkl")))
+    if os.path.exists(str('./checkpoints/' + METHOD + "/decoder_lv4.pkl")):
+        decoder_lv4.load_state_dict(torch.load(str('./checkpoints/' + METHOD + "/decoder_lv4.pkl")))
         print("load decoder_lv4 success")
     
     if os.path.exists('./checkpoints/' + METHOD) == False:
