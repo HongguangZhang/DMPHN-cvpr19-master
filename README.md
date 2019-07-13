@@ -16,7 +16,7 @@ scipy
 __For model training, run following commands.__
 
 ```
-python xxx.py
+python xxx.py -b 6
 ```
 
 
