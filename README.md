@@ -6,6 +6,8 @@ Pytorch Implementation of CVPR19 "[Deep Stacked Multi-patch Hierarchical Network
 Please download GoPro dataset into './datas'. <br/>
 https://drive.google.com/file/d/1H0PIXvJH4c40pk7ou6nAwoxuR4Qh_Sa2/view
 
+GoPro Pretrained models are stored in './checkpoints'. 
+
 __Requires.__
 ```
 pytorch-0.4.1
