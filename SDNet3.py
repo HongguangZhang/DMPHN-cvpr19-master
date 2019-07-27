@@ -116,7 +116,8 @@ def main():
                 feature[s] = {}
                 residual[s] = {}
 				            
-            images['gt'] = Variable(inputs['sharp_image'] - 0.5).cuda(GPU)            
+            images['gt'] = Variable(inputs['sharp_image'] - 0.5).cuda(GPU)
+            images['lv1'] = Variable(inputs['blur_image'] - 0.5).cuda(GPU)           
             H = images['lv1'].size(2)
             W = images['lv1'].size(3)
             
