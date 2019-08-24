@@ -234,7 +234,7 @@ def main():
             
             if (iteration+1)%10 == 0:
                 stop = time.time()
-                print("epoch:", epoch, "iteration:", iteration+1, "loss:%.4f"%loss.item()), 'time:%.4f'%(stop-start))
+                print("epoch:", epoch, "iteration:", iteration+1, "loss:%.4f"%loss.item(), 'time:%.4f'%(stop-start))
                 start = time.time()
                 
         if (epoch)%100==0:
