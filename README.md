@@ -13,6 +13,7 @@ __Requires.__
 pytorch-0.4.1
 numpy
 scipy
+scikit-image
 ```
 
 __For model training, run following commands.__
