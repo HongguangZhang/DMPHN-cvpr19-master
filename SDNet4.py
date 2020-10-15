@@ -330,7 +330,7 @@ def main():
                                         
                     deblurred_image = residual[s]['lv1']
 
-                    save_deblur_images(deblurred_image.data + 0.5, 4, iteration, epoch)
+                    save_deblur_images(deblurred_image.data + 0.5, iteration, epoch)
 
         for s in ['s1', 's2', 's3', 's4']:
             for lv in ['lv1', 'lv2', 'lv3']:
