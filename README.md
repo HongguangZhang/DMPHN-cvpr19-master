@@ -31,6 +31,7 @@ python xxx_test.py
 ## Citation
 If you think this work is useful for your research, please cite the following papers.
 
+Conference Version:
 ```
 @InProceedings{Zhang_2019_CVPR,
     author = {Zhang, Hongguang and Dai, Yuchao and Li, Hongdong and Koniusz, Piotr},
@@ -40,6 +41,8 @@ If you think this work is useful for your research, please cite the following pa
     year = {2019}
 }
 ```
+
+Journal Version:
 ```
 @article{zhang2022event,
     title={Event-guided Multi-patch Network with Self-supervision for Non-uniform Motion Deblurring},
